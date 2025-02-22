@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a349383c5500fe749471b3bfb83df832",
+    "content-hash": "d99bc9334579f87eb0429ee598f3ed37",
     "packages": [
         {
             "name": "brick/math",
@@ -509,6 +509,89 @@
                 }
             ],
             "time": "2024-12-27T00:36:43+00:00"
+        },
+        {
+            "name": "evilfreelancer/routeros-api-php",
+            "version": "1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EvilFreelancer/routeros-api-php.git",
+                "reference": "1210f8b3ebd6b6e2773599cd0ccffa339a52cd8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EvilFreelancer/routeros-api-php/zipball/1210f8b3ebd6b6e2773599cd0ccffa339a52cd8c",
+                "reference": "1210f8b3ebd6b6e2773599cd0ccffa339a52cd8c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sockets": "*",
+                "php": "^7.4|^8.0",
+                "spatie/ssh": "^1.8"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "larapack/dd": "^1.1",
+                "limedeck/phpunit-detailed-printer": "^5.0",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.0",
+                "rector/rector": "^0.7|^0.8|^0.9",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "RouterOS": "RouterOS\\Laravel\\Facade"
+                    },
+                    "providers": [
+                        "RouterOS\\Laravel\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RouterOS\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Rock",
+                    "email": "paul@drteam.rocks",
+                    "homepage": "http://drteam.rocks/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modern Mikrotik RouterOS API PHP client for your applications (with Laravel support)",
+            "keywords": [
+                "PSR-4",
+                "facade",
+                "laravel",
+                "mikrotik",
+                "plugin",
+                "routeros",
+                "socket-client"
+            ],
+            "support": {
+                "issues": "https://github.com/EvilFreelancer/routeros-api-php/issues",
+                "source": "https://github.com/EvilFreelancer/routeros-api-php/tree/1.5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://boosty.to/evilfreelancer",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://pay.cloudtips.ru/p/937f48ac",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-09-20T11:46:52+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -3182,6 +3265,65 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
+            "name": "spatie/ssh",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/ssh.git",
+                "reference": "cfccf0873611a2d1b030f65d1dd319c8005d993f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/ssh/zipball/cfccf0873611a2d1b030f65d1dd319c8005d993f",
+                "reference": "cfccf0873611a2d1b030f65d1dd319c8005d993f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "symfony/process": "^4.4|^5.3|^6.0|^7.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.22",
+                "spatie/pest-plugin-snapshots": "^1.1",
+                "symfony/var-dumper": "^5.3|6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Ssh\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A lightweight package to execute commands over an SSH connection",
+            "homepage": "https://github.com/spatie/ssh",
+            "keywords": [
+                "spatie",
+                "ssh"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/ssh/issues",
+                "source": "https://github.com/spatie/ssh/tree/1.13.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-12-23T10:27:18+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v6.4.17",
             "source": {
@@ -5393,6 +5535,90 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
             },
             "time": "2024-12-21T16:25:41+00:00"
+        },
+        {
+            "name": "tzsk/otp",
+            "version": "8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tzsk/otp.git",
+                "reference": "ba29dbbd3c3a2bad41d357fdbca29d1b7a590811"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tzsk/otp/zipball/ba29dbbd3c3a2bad41d357fdbca29d1b7a590811",
+                "reference": "ba29dbbd3c3a2bad41d357fdbca29d1b7a590811",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0",
+                "laravel/pint": "^1.4",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.3|^10.5",
+                "vimeo/psalm": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Otp": "Tzsk\\Otp\\Facades\\Otp"
+                    },
+                    "providers": [
+                        "Tzsk\\Otp\\OtpServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helper.php"
+                ],
+                "psr-4": {
+                    "Tzsk\\Otp\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tzsk",
+                    "email": "mailtokmahmed@gmail.com",
+                    "homepage": "https://github.com/tzsk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OTP Generator and Verifier without database",
+            "homepage": "https://github.com/tzsk/otp",
+            "keywords": [
+                "laravel otp",
+                "otp",
+                "otp generator",
+                "otp verification",
+                "php otp",
+                "tzsk"
+            ],
+            "support": {
+                "issues": "https://github.com/tzsk/otp/issues",
+                "source": "https://github.com/tzsk/otp/tree/8.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/KMAhmed",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tzsk",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-26T16:20:40+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
